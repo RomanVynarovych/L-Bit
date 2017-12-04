@@ -1,0 +1,13 @@
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\bin\Release\l-Bit.exe.config
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\bin\Release\l-Bit.exe
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\bin\Release\l-Bit.pdb
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\bin\Release\Bass.Net.dll
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\bin\Release\Bunifu_UI_v1.5.3.dll
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\obj\Release\l_Bit.Form1.resources
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\obj\Release\l_Bit.Form2.resources
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\obj\Release\l_Bit.Properties.Resources.resources
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\obj\Release\l-Bit.csproj.GenerateResource.Cache
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\obj\Release\l-Bit.exe
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\obj\Release\l-Bit.pdb
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\obj\Release\l-Bit.csprojResolveAssemblyReference.cache
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\bin\Release\taglib-sharp.dll

@@ -1,0 +1,12 @@
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\bin\Debug\l-Bit.exe.config
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\bin\Debug\l-Bit.exe
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\bin\Debug\l-Bit.pdb
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\obj\Debug\l-Bit.csprojResolveAssemblyReference.cache
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\obj\Debug\l_Bit.Form1.resources
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\obj\Debug\l_Bit.Properties.Resources.resources
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\obj\Debug\l-Bit.csproj.GenerateResource.Cache
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\obj\Debug\l-Bit.exe
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\obj\Debug\l-Bit.pdb
+C:\Users\roman\Desktop\3 курс\Бокла\Player\l-Bit\l-Bit\obj\Debug\l_Bit.Form2.resources
+C:\Users\roman\Desktop\3 курс\Бокла\Player\L-Bit\l-Bit\bin\Debug\Bass.Net.dll
