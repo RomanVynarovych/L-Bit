@@ -13,6 +13,8 @@ namespace l_Bit
         public static bool InitDefaultDevice;
         public static int Stream;
         public static int Volume = 100;
+        private static bool IsStopped = true;
+        public static bool EndPlayList;
 
         public static bool InitBass(int hz)
         {
@@ -23,23 +25,40 @@ namespace l_Bit
 
         public static void Play(string filename, int vol)
         {
-            Stop();
-            if(InitBass(HZ))
+            if (Bass.BASS_ChannelIsActive(Stream) != BASSActive.BASS_ACTIVE_PAUSED)
             {
-                Stream = Bass.BASS_StreamCreateFile(filename, 0, 0, BASSFlag.BASS_DEFAULT);
-                if (Stream != 0)
+                Stop();
+                if (InitBass(HZ))
                 {
-                    Volume = vol;
-                    Bass.BASS_ChannelSetAttribute(Stream, BASSAttribute.BASS_ATTRIB_VOL, Volume / 100);
-                    Bass.BASS_ChannelPlay(Stream, false);
+                    Stream = Bass.BASS_StreamCreateFile(filename, 0, 0, BASSFlag.BASS_DEFAULT);
+                    if (Stream != 0)
+                    {
+                        Volume = vol;
+                        Bass.BASS_ChannelSetAttribute(Stream, BASSAttribute.BASS_ATTRIB_VOL, Volume / 100);
+                        Bass.BASS_ChannelPlay(Stream, false);
+                    }
                 }
             }
+            else
+            {
+                Bass.BASS_ChannelPlay(Stream, false);
+            }
+            IsStopped = false;
+        }
+
+        
+
+        public static void Pause()
+        {
+            if (Bass.BASS_ChannelIsActive(Stream) == BASSActive.BASS_ACTIVE_PLAYING)
+                Bass.BASS_ChannelPause(Stream);
         }
 
         public static void Stop()
         {
             Bass.BASS_ChannelStop(Stream);
             Bass.BASS_StreamFree(Stream);
+            IsStopped = true;
         }
 
         public static int GetTimeOfStream(int stream)
@@ -68,7 +87,23 @@ namespace l_Bit
             Bass.BASS_ChannelSetAttribute(stream, BASSAttribute.BASS_ATTRIB_VOL, Volume / 100F);
         }
 
-        
+        public static bool ToNextTrack()
+        {
+            if ((Bass.BASS_ChannelIsActive(Stream) == BASSActive.BASS_ACTIVE_STOPPED) && (!IsStopped))
+            {
+                if (Vars.Files.Count > Vars.CurrentTrackNumber + 1)
+                {
+                    Play(Vars.Files[++Vars.CurrentTrackNumber], Volume);
+                    EndPlayList = false;
+                    return true;
+                }
+                else
+                {
+                    EndPlayList = true;
+                }
+            }
+            return false;
+        }
 
     }
 }
