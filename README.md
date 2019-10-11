@@ -1,2 +1,2 @@
 # L-Bit
-It is a mp3 player with loud speaker
+It is a mp3 player for loud speaker
